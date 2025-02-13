@@ -15,9 +15,11 @@ class Character:
     
     def lose_health(self, damage):
         self.health -= damage
+        print(f"\nYou lose some health: {self.get_health()}\n")
 
     def gain_health(self, heal):
         self.health += heal
+        print(f"\nYou gain some health: {self.get_health()}\n")
 
     def grab_weapon(self, weapon):
         self.weapon = weapon
